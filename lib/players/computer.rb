@@ -8,11 +8,7 @@ module Players
       if !board.taken?(5)
         move = "5"
         
-        # If going second and middle square is taken, take bottom left corner. 
-      # elsif board.turn_count == 1 
-      #   move = "7"
-        
-        
+        # If 
       elsif board.turn_count == 3 && (board.position(1) == board.position(9) || board.position(3) == board.position(7))
         move = "2"
       
