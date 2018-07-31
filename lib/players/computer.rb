@@ -19,7 +19,9 @@ module Players
       else 
         Game::WIN_COMBINATION.detect do |win_combo|
           
-          if win_combo.select {|i| board.position(i+1).size == 2 && win_combo.any?{
+          if win_combo.select{|i| board.position(i+1) == token}.size == 2 && win_combo.any?{|i| board.position(i+1) == " "}
+            move = win_combo.select{|i| !board.taken?(i+1)}.first.to_i.+(1).to_s
+          end 
         end 
       end 
         
