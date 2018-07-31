@@ -20,7 +20,8 @@ module Players
       elsif board.taken?(9)  
         move = "1"
         
-      elsif board.taken?(9)
+      elsif board.taken?(4)
+        move = "6"
         
         
       
