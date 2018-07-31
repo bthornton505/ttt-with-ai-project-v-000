@@ -19,7 +19,7 @@ module Players
       else 
         Game::WIN_COMBINATION.detect do |win_combo|
           
-          if win_combo.select {
+          if win_combo.select {|
         end 
       end 
         
