@@ -20,6 +20,9 @@ module Players
       elsif board.turn_count == 3 
         move = "8"
         
+        
+      elsif 
+        
       end 
         
         
