@@ -21,7 +21,8 @@ module Players
         move = "8"
         
         
-      elsif 
+      elsif board.turn_count == 4 
+        move = [1, 3, 7, 9].detect {|i| 
         
       end 
         
