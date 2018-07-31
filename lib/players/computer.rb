@@ -22,7 +22,7 @@ module Players
         
         
       elsif board.turn_count == 4 
-        move = [1, 3, 7, 9].detect {|i| 
+        move = [1, 3, 7, 9].detect {|i| !board.taken?(i)}.to_s
         
       end 
         
