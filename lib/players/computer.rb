@@ -16,7 +16,8 @@ module Players
       elsif board.taken?(2) 
         move = "8"
       
-      
+      else 
+        
       end 
         
         
