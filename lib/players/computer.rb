@@ -16,6 +16,14 @@ module Players
       elsif board.turn_count == 2 
         move = "4"
         
+      
+      elsif !board.taken?(2) && board.turn_count == 2 
+        move = "4"
+        
+        
+      elsif board.turn_count == 3 
+        move = "8"
+        
       end 
         
         
