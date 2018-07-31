@@ -8,9 +8,9 @@ module Players
       if !board.taken?(5)
         move = "5"
         
-        # If going second, and you took the middle square, take an 
+        # If going second (and you took the middle square), and the opponent took a corner square, take a side square. 
       elsif board.turn_count == 3 && (board.position(1) == board.position(9) || board.position(3) == board.position(7))
-        move = "2"
+        move = [2, 4, 6, 8].detect{|i| i.position(i+1)}.to_s 
       
       else 
         Game::WIN_COMBINATIONS.detect do |win_combo|
