@@ -13,8 +13,8 @@ module Players
         move = "7"
         
         
-      elsif board.taken?(2) 
-        move = "8"
+      elsif board.turn_count == 3 && (board.position(1) == board.position(9) || board.position(3) == board.position(7))
+        move = "2"
       
       else 
         Game::WIN_COMBINATIONS.detect do |win_combo|
