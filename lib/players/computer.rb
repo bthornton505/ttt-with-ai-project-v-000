@@ -13,7 +13,7 @@ module Players
         move = "7"
         
         
-      elsif !board.taken?(2) && board.turn_count == 2 
+      elsif board.taken?(2) 
         move = "4"
         
         
