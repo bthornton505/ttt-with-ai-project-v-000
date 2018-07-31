@@ -17,7 +17,8 @@ module Players
         move = "8"
       
       else 
-        
+        Game::WIN_COMBINATION.detect do |win_combo|
+          
       end 
         
         
