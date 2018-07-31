@@ -18,7 +18,7 @@ module Players
         
         
       elsif board.taken?(1)  
-        # move = [3, 7, 9].detect {|i| !board.taken?(i)}.to_s
+        move = "8"  #[3, 7, 9].detect {|i| !board.taken?(i)}.to_s
         
         
       
